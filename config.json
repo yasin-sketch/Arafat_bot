@@ -1,7 +1,7 @@
 {
 	"facebookAccount": {
-		"email": "waqfstatec@gmail.com",
-		"password": "@suku335na",
+		"email": "",
+		"password": "",
 		"2FASecret": "",
 		"i_user": "",
 		"proxy": null,
@@ -12,18 +12,15 @@
 	"antiInbox": false,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "✨ S U K U N A 🍼",
+	"nickNameBot": "GoatBot",
 	"prefix": "-",
 	"adminOnly": {
 		"enable": false,
 		"ignoreCommand": []
 	},
-	"adminBot": [
-		"100083557261851","61575032528810"
-	],
-	"owner": ["100083557261851","61575032528810"],
+	"adminBot": [],
 	"whiteListMode": {
-		"enable": true,
+		"enable": false,
 		"whiteListIds": [],
 		"notes": "if you enable this feature, only the ids in the whiteListIds list can use the bot"
 	},
@@ -34,8 +31,8 @@
 		"how_it_work": "if you enable both whiteListMode and whiteListModeThread, the system will check if the user is in whiteListIds, then check if the thread is in whiteListThreadIds, if one of the conditions is true, the user can use the bot"
 	},
 	"database": {
-		"type": "mongodb",
-		"uriMongodb": "mongodb+srv://toxiciter:Hasan5&7@toxiciter.9tkfu.mongodb.net/GoatBotV3?retryWrites=true&w=majority&appName=Toxiciter",
+		"type": "sqlite",
+		"uriMongodb": "",
 		"autoSyncWhenStart": false,
 		"autoRefreshThreadInfoFirstTime": true,
 		"notes": "(1) type selects 'json' or 'sqlite' or 'mongodb'. If you choose mongodb, enter uri connect mongodb in the uriMongodb section, instructions to get uri connect mongodb at: https://youtu.be/z1f9urHW5xY. I recommend using 'mongodb' or 'sqlite', json is not recommended because it is not stable. (2) when you set autoSyncWhenStart to true, the bot will automatically synchronize the data in the database when starting the bot, this will make the bot start slower. (3) when you set autoRefreshThreadInfoFirstTime to true, the bot will automatically refresh the thread information when get first message from the thread since starting the bot"
@@ -43,15 +40,15 @@
 	"timeZone": "Asia/Ho_Chi_Minh",
 	"credentials": {
 		"gmailAccount": {
-			"email": "s.khasanmahamud324@gmail.com",
-			"clientId": "1038587958316-ugoqskt5s8itgca98ahjulp4691lhd9v.apps.googleusercontent.com",
-			"clientSecret": "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",
-			"refreshToken": "1//04ra2waD4ABt3CgYIARAAGAQSNgF-L9IrYkOHdKbzJwt5kMXGWgdKgc2aF3CxAdJ96G-113vAhZZR2L1fFuzCVslX_QvBGv2R0w",
+			"email": "",
+			"clientId": "",
+			"clientSecret": "",
+			"refreshToken": "",
 			"apiKey": ""
 		},
 		"gRecaptcha": {
-			"siteKey": "6LfR_eIqAAAAAJ7iv5GGCSTMTbhbzyUtpYQcwHXS",
-			"secretKey": "6LfR_eIqAAAAALlwNhRONS5BLwglWLVImOt-4LT-"
+			"siteKey": "",
+			"secretKey": ""
 		}
 	},
 	"dashBoard": {
@@ -69,7 +66,7 @@
 		}
 	},
 	"autoRestart": {
-		"time": false,
+		"time": null,
 		"notes": "you can set time is interval with milisecond or cron time, example: 1000, 10000, 60000, 3600000, 86400000, 0 0 * * *,... docs: https://www.npmjs.com/package/node-cron. If you set time is 0 or false or null, the bot will not auto restart"
 	},
 	"autoUptime": {
@@ -79,7 +76,7 @@
 		"notes": "the value of timeInterval is seconds, url is the url you want to send the request to (automatically detected for hosting glitch or replit)"
 	},
 	"autoLoadScripts": {
-		"enable": true,
+		"enable": false,
 		"ignoreCmds": "",
 		"ignoreEvents": "",
 		"notes": "this feature will automatically load the script when scripts have been changed, you can set ignoreCmds to ignore commands, ignoreEvents to ignore events, separate by comma or space, example: \"cmd1.js cmd2.js cmd3.js\" (without backslash)"
@@ -89,7 +86,7 @@
 	"autoRestartWhenListenMqttError": false,
 	"restartListenMqtt": {
 		"enable": true,
-		"timeRestart": 300000,
+		"timeRestart": 3600000,
 		"delayAfterStopListening": 2000,
 		"logNoti": true,
 		"notes": "the value of timeRestart and delayAfterStopListening is milisecond, You shouldn't edit this if you don't know what it is"
@@ -133,15 +130,13 @@
 		"typ": false,
 		"presence": false
 	},
-	
-	
 	"optionsFca": {
 		"forceLogin": true,
 		"listenEvents": true,
 		"updatePresence": true,
 		"listenTyping": true,
 		"logLevel": "error",
-		"selfListen": true,
+		"selfListen": false,
 		"selfListenEvent": true,
 		"autoMarkDelivery": false,
 		"autoReconnect": false,
